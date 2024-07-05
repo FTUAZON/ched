@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHED-IDADAIT</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/ched.jpg') no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(10px);
+            z-index: -1;
+        }
+
+        .caption {
+            text-align: center;
+            font-style: italic;
+            margin: 20px;
+            color: rgb(255, 255, 255);
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .logo-container img {
+            width: 100px;
+            height: auto;
+            margin: 0 10px;
+        }
+
+        .main-image {
+            margin: 20px 0;
+        }
+
+        .main-image img {
+            width: 700px;
+            height: 400px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .main-image img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            max-width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            margin: 10% auto;
+            display: block;
+            width: 90%;
+            max-width: 700px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            .main-image img {
+                width: 350px;
+                height: 200px;
+            }
+
+            .gallery {
+                gap: 5px;
+            }
+
+            .gallery img {
+                width: 70px;
+                height: 70px;
+            }
+
+            .modal-content {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="logo-container">
+    <img src="images/CHEDLOGO.png" alt="CHED Logo">
+</div>
+
+<div class="caption">
+    IDADAIT 2024 - The evidence is clear: INVEST IN PREVENTION<br><br>
+    The University of Santo Tomas – General Santos hosted the International Day Against Drug Abuse and Illicit Trafficking (IDADAIT) 2024 this July 4, 2024, raising awareness about the dangers of drug abuse and the illegal drug trade.<br><br>
+    This activity was graced by the Executive Director IV of the Commission on Higher Education, Atty. Cinderella Filipina S. Benitez-Jaro, Director IV, the CHED XII Regional Director, Dr. Nelia A. Alibin, Director IV and the Education Program Supervisors of CHED RO XII and Kap Alvin Veneracion, Executive Assistant III to the Mayor, on behalf of Hon. City Mayor Lorelie G. Pacquiao, Mayor of General Santos City. This event was participated by the different Higher Education Institutions (HEIs) across the region with their faculty and students.<br><br>
+    IDADAIT 2024 serves as an opportunity to promote preventive measures, support individuals affected by drug addiction, and emphasize the importance of international cooperation in addressing drug-related challenges.<br><br>
+    The following contests were prepared to raise awareness, advocate for investment, and empower communities among stakeholders in the region that were participated by the students across different HEIs in the region:<br>
+    · Komiks Kontra Droga: Kampus Ligtas!<br>
+    · Art Against Addiction: Poster Challenge<br>
+    · Himig ng Pagbabago at Katatagan<br>
+    · Quiz Bee<br><br>
+    IDADAIT 2024 has not only brought attention to the critical issues of drug abuse and illicit trafficking but has also strengthen communities to take proactive measures through collaborative and innovative efforts underscoring the importance of investing in prevention strategies.
+</div>
+
+<div class="main-image">
+    <img src="images/1st Page.jpg">
+</div>
+
+<div class="gallery">
+    <img src="images/2.jpg">
+    <img src="images/3.jpg">
+    <img src="images/4.jpg">
+    <img src="images/5.jpg">
+    <img src="images/6.jpg">
+    <img src="images/7.jpg">
+    <img src="images/8.jpg">
+    <img src="images/9.jpg">
+    <img src="images/10.jpg">
+    <img src="images/11.jpg">
+    <img src="images/12.jpg">
+    <img src="images/13.jpg">
+    <img src="images/14.jpg">
+    <img src="images/15.jpg">
+    <img src="images/16.jpg">
+    <img src="images/17.jpg">
+    <img src="images/18.jpg">
+    <img src="images/19.jpg">
+    <img src="images/20.jpg">
+    <img src="images/21.jpg">
+    <img src="images/22.jpg">
+    <img src="images/23.jpg">
+    <img src="images/24.jpg">
+    <img src="images/25.jpg">
+    <img src="images/26.jpg">
+    <img src="images/27.jpg">
+    <img src="images/28.jpg">
+    <img src="images/29.jpg">
+    <img src="images/30.jpg">
+    <img src="images/31.jpg">
+    <img src="images/32.jpg">
+    <img src="images/33.jpg">
+    <img src="images/34.jpg">
+    <img src="images/35.jpg">
+    <img src="images/36.jpg">
+    <img src="images/37.jpg">
+    <img src="images/38.jpg">
+    <img src="images/39.jpg">
+    <img src="images/40.jpg">
+    <img src="images/41.jpg">
+    <img src="images/42.jpg">
+    <img src="images/43.jpg">
+    <img src="images/44.jpg">
+    <img src="images/45.jpg">
+    <img src="images/46.jpg">
+    <img src="images/47.jpg">
+    <img src="images/50.jpg">
+    <img src="images/51.jpg">
+    <img src="images/52.jpg">
+    <img src="images/53.jpg">
+    <img src="images/55.jpg">
+    <img src="images/56.jpg">
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+</div>
+
+<script>
+    const modal = document.getElementById("myModal");
+    const modalImg = document.getElementById("img01");
+    const thumbnails = document.querySelectorAll(".gallery img, .main-image img");
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+    });
+
+    const span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    modal.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
